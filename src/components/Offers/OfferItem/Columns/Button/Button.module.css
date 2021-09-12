@@ -1,0 +1,35 @@
+.buttonContainer {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .buttonContainer {
+        display: none;
+    }
+}
+
+.button {
+    background-color: #0DD149;
+    color: white;
+    border: 1px solid #0DD149;
+    padding: 0px 10px;
+    font-size: 12px;
+    line-height: 32px;
+    border-radius: 4px;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.license {
+    color: #8c8c8c;
+    font-size: 12px;
+}

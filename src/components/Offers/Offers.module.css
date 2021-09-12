@@ -1,0 +1,45 @@
+.offersContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px;
+    padding: 0 30px;
+}
+
+.showMore {
+    /*margin: 10px 0px;*/
+    /*margin-top: 0px;*/
+    padding: 17px 20px;
+    text-align: center;
+    transition: .2s linear;
+    background-color: white;
+    border-bottom: 1px solid #dddede;
+    border-radius: 0 0 5px 5px;
+}
+
+.showMore img {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.sort:hover, .showMore:hover {
+    cursor: pointer;
+    color: #00afff;
+}
+
+.showMore_active {
+    color: #dddede;
+    cursor: default;
+}
+
+.sortContainer {
+    display: flex;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #dddede;
+    border-radius: 5px 5px 0 0;
+}
+
+.sortContainer span {
+    padding: 0 10px;
+}

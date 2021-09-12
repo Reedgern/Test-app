@@ -1,0 +1,27 @@
+.rateContainer {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.name:before {
+    content: '«';
+}
+
+.name:after {
+    content: '»';
+}
+
+.rateRow {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rateNum {
+    font-size: 24px;
+}

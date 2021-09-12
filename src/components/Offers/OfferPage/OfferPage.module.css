@@ -1,0 +1,39 @@
+.orgContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 0px 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.orgContainer .license {
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.menuContainer {
+    display: inline-flex;
+    padding: 0 30px;
+}
+
+.menuContainer .menuItem {
+    padding: 0 40px 0 0;
+}
+
+.menuItem {
+    padding: 0 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+.menuItem_hover:hover {
+    color: #00afff;
+}
+
+.active {
+    border-bottom: 3px solid black;
+}

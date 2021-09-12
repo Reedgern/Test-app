@@ -1,0 +1,10 @@
+.item {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px;
+    border-bottom: 1px solid #dddede;
+    background-color: white;
+}
