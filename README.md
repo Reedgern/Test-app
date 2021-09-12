@@ -14,6 +14,7 @@
 Основной стек используемых технологий:
 * React
 * CSS (flexbox)
+* Адаптивная верстка (все еще на стадии разработки)
 * BrowserRouter (а точнее, HashRouter - из-за сложностей с url при деплое на github-pages)
 * Redux
 * Redux-thunk
