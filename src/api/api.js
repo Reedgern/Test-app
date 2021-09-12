@@ -11,6 +11,12 @@ const compareByAmount = (a, b) => {
 };
 
 export const offersAPI = {
+    // common function for getting and adding new offers.
+    // As a server usually has a lot of data, it doesn't send it all at one request,
+    //  instead it gives it by small portions.
+    // By this reason we can't just sort the data we've already received as new portions will be unsorted.
+    // To address this problem we will sort the whole data we have (in our case it won't take much time)
+    // before giving it back by portions.
     getOffers: (currentIdx=0, count=10, sortType=null) => {
         const offersList = offersDataExt.slice();
         switch (sortType) {
@@ -40,7 +46,7 @@ export const offersAPI = {
         return new Promise((resolve, reject) => {
             const response = {
                 data: {
-                    offerInfo: offersDataExt.find(data => data.id == offerId)
+                    offerInfo: offersDataExt.find(data => data.id == offerId) // we compare this way because offerId is a string received as url params
                 },
                 resultCode: 0
             };
